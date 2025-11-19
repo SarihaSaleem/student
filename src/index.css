@@ -1,0 +1,43 @@
+/* src/index.css */
+:root{
+  --card-bg:#fff;
+  --border:#e0e0e0;
+  --active:#27ae60;
+  --inactive:#7f8c8d;
+  --skill-bg:#f1f3f4;
+}
+
+body{
+  font-family: Inter, system-ui, Arial;
+  background:#f6f8fb;
+  margin:0;
+  padding:20px;
+  color:#222;
+}
+
+.container{ max-width:1000px; margin:0 auto; }
+
+.header { text-align:center; margin-bottom:20px; }
+.header h1 { margin:0; font-size:2rem; }
+.subtitle { color:#666; margin-top:5px; }
+
+.stats { background:#fff; padding:12px; border-radius:8px; margin-bottom:18px; border:1px solid var(--border); }
+
+.list { display:grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap:16px; margin-top:10px; }
+
+.student-card {
+  background:var(--card-bg);
+  padding:14px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.card-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.status-badge { padding:6px 8px; border-radius:999px; font-weight:600; font-size:0.8rem; color:#fff; }
+.status-badge.active { background:var(--active); }
+.status-badge.inactive { background:var(--inactive); }
+
+.skills { margin-top:10px; display:flex; gap:8px; flex-wrap:wrap; }
+.skill-badge { background:var(--skill-bg); padding:6px 8px; border-radius:999px; font-size:0.8rem; border:1px solid #e5e7eb; }
+.footer { text-align:center; margin-top:28px; color:#555; }
